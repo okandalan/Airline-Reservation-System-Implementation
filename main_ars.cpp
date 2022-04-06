@@ -28,24 +28,18 @@ int main() {
     
     ars.addFlight("DS7010", "20/12/2021 15:00", "20/12/2021 16:30", "Ankara", "Istanbul", 200, 10);
     
-
-
-    
-    
     ars.issueTicket("archie", "rosie", "DS7010", economy);
     ars.issueTicket("harry", "isabella", "DS7010", economy);
     
-
     ars.issueTicket("jack", "sophia", "DS7020", economy);
     
     ars.print();
-
 
     p = ars.searchPassenger("jack", "sophia");
     if (p)
         std::cout << p->getFirstname() << " " << p->getLastname() << '\n';
     else
-        std::cout << "YOK ÖYLE BİRİSİ BİLADER" << '\n';
+        std::cout << "YOK öyle birisi" << '\n';
     
     return 0;
 }
